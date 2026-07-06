@@ -91,7 +91,7 @@ form.addEventListener("submit", async function(e){
     // Replace this URL later
     // **************
 
-    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyL5X3SBG4VRKGJYjfMWiTa24vm8Bs_OFAdKbjIPoQUhxZNV9fNErnNEMVtbhO_sxqANA/exec";
+    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbz8C3yB7gnbAUoxllNJis7StfODCCF4Uji7XMzNf345SSWHN33gAZr1UHVCLVTXrE6iEQ/exec";
 
     try{
 
@@ -103,19 +103,11 @@ form.addEventListener("submit", async function(e){
 
         }else{
 
-            await fetch(WEBAPP_URL,{
-
-                method:"POST",
-
-                mode:"cors",
-
-                headers:{
-                    "Content-Type":"application/json"
-                },
-
-                body:JSON.stringify(data)
-
-            });
+            await fetch(WEBAPP_URL, {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data)
+});
 
             alert("Thank you! Your RSVP has been received!");
 
