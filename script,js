@@ -91,7 +91,7 @@ form.addEventListener("submit", async function(e){
     // Replace this URL later
     // **************
 
-    const WEBAPP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+    const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyL5X3SBG4VRKGJYjfMWiTa24vm8Bs_OFAdKbjIPoQUhxZNV9fNErnNEMVtbhO_sxqANA/exec";
 
     try{
 
