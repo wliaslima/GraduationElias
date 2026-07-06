@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elias' Graduation Invitation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Background -->
+<div class="background"></div>
+
+<!-- Envelope Screen -->
+
+<div id="startScreen">
+
+    <div class="envelope" id="envelope">
+
+        <div class="flap"></div>
+
+        <div class="letter">
+
+            <h2>You're Invited!</h2>
+
+            <p>Click to Open</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Invitation -->
+
+<div id="inviteScreen">
+
+    <div class="inviteContainer">
+
+        <!-- Replace invite.png with your invitation -->
+        <img src="invite.png" id="inviteImage" alt="Graduation Invitation">
+
+        <div class="buttons">
+
+            <button id="rsvpBtn">
+                RSVP
+            </button>
+
+            <a
+                class="mapsButton"
+                href="https://maps.google.com/?q=218+Dedham+Street+Norfolk+MA"
+                target="_blank">
+                View Address
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- RSVP Popup -->
+
+<div id="popup">
+
+    <div class="popupBox">
+
+        <h2>RSVP</h2>
+
+        <form id="rsvpForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="number"
+                id="guests"
+                placeholder="Guests Attending"
+                min="1"
+                value="1">
+
+            <textarea
+                id="message"
+                placeholder="Leave a message (optional)"></textarea>
+
+            <button type="submit">
+                Submit RSVP
+            </button>
+
+            <button
+                type="button"
+                id="closePopup">
+                Close
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- Confetti Canvas -->
+
+<canvas id="confetti"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
